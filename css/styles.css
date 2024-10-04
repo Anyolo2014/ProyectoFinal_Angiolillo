@@ -1,0 +1,268 @@
+/* Globales */
+html {
+    scroll-behavior: smooth;
+}
+
+main{
+    padding: 20px !important;
+}
+
+.titles{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 5px 0 5px;
+    color:#ffffff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+}
+
+/* Navbar */
+.customised {
+    color: black !important;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
+
+.customised:hover{
+    color:  rgb(5, 122, 85) !important;
+}
+.customised::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(5, 122, 85);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.8s ease;
+}
+
+.customised:hover::after {
+    transform: scaleX(1);
+}
+
+.z-20{
+    z-index: 100;
+}
+
+/* Boton de busqueda */
+.inputBox_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 14em;
+    width: fit-content;
+    height: fit-content;
+    background-color: #5c6370;
+    border-radius: 0.8em;
+    overflow: hidden;
+}
+
+.search_icon {
+    height: 1em;
+    padding: 0 0.5em 0 0.8em;
+    fill: #abb2bf;
+}
+
+.inputBox {
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    width: 100%;
+    border: 0;
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 1em;
+}
+
+::placeholder {
+    color: #abb2bf;
+}
+
+.section-productos{
+    display: grid;
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(350px, 1fr)
+    );
+    gap: 32px;
+}
+.rounded-t-lg{
+    margin: auto;
+}
+
+/* Botones para las categorias */
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px !important;
+}
+
+.botonCategoria {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 0.5rem;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+    z-index: 0 !important;
+}
+
+.botonCategoria::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 0.5rem;
+    background-color: #057A55;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(207, 27, 27, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(201, 22, 22, 0.27);
+    transition: all 250ms;
+}
+
+.botonCategoria:hover {
+    color: #ffffff;
+}
+
+.botonCategoria:hover::before {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .botonCategoria {
+        padding: 5px;
+        margin: auto;
+        color: #212121;
+        text-align: center;
+        font-size: 15px;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        justify-content: space-between;
+        padding: 20px 5px !important;
+    }
+}
+
+.seleccionado {
+    color: #ffffff;
+    background-color: #057A55;
+    transition: background-color 0.4s;
+}
+
+/* Carrito */
+.carrito-compras{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 199;
+}
+
+.productoEnCarrito{
+    border: 1px solid black;
+    border-radius: 1px;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 30px;
+}
+
+.btnQuitar{
+    background-color:  rgb(5, 122, 85);
+    color: white;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+.z-30{
+    z-index: 0 !important;
+}
+
+.oculto {
+    display: none;
+}
+
+.PagoTotal{
+    text-align: center;
+    padding: 20px;
+}
+
+.PagoTotal h3{
+    padding: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Icono carrito */
+.carrito-logo img {
+    top: 20px;
+    right: 360px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.carrito-logo span {
+    display: block;
+    background-color:  rgb(5, 122, 85);
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 150px;
+    width: 22px;
+    text-align: center;
+    font-size: 14px;
+    margin: -40px 0 0 25px;
+    position: fixed;
+}
+
+.btnmasymenos{
+    background-color:  rgb(5, 122, 85);
+    color: #ffffff;
+    border-radius: 10px;
+    width: 15px;
+    text-align: center;
+    font-size: 14px;
+}

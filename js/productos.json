@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "nombre": "Nike | Fútbol 11",
+        "precio": 78900,
+        "categoria": "Deportes",
+        "imagen": "01.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Sports | Basquet",
+        "precio": 37900,
+        "categoria": "Deportes",
+        "imagen": "02.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "DRB | Handball",
+        "precio": 41450,
+        "categoria": "Deportes",
+        "imagen": "03.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Penn | Tennis (x3)",
+        "precio": 10830,
+        "categoria": "Deportes",
+        "imagen": "04.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Sensei | Ping Pong",
+        "precio": 1.999,
+        "categoria": "Deportes",
+        "imagen": "05.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Topper | Rugby",
+        "precio": 55000,
+        "categoria": "Deportes",
+        "imagen": "06.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Taylormade | Golf (x12)",
+        "precio": 41950,
+        "categoria": "Deportes",
+        "imagen": "07.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Mikasa | Waterpolo",
+        "precio": 116999,
+        "categoria": "Deportes",
+        "imagen": "08.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "DRB | Gimnasia Rítmica",
+        "precio": 14610,
+        "categoria": "Fitness y Musculación",
+        "imagen": "09.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Loska | Estimulación y Masajes",
+        "precio": 13.567,
+        "categoria": "Fitness y Musculación",
+        "imagen": "10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Mikasa | Anti Estres (x12) ",
+        "precio": 11248,
+        "categoria": "Fitness y Musculación",
+        "imagen": "11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Loska | Esferodinamia 75 Cm",
+        "precio": 23919,
+        "categoria": "Pilates y Yoga",
+        "imagen": "12.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Loska | Semi Esfera 60 Cm",
+        "precio": 139000,
+        "categoria": "Pilates y Yoga",
+        "imagen": "13.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Hygge | Blanda 7cm Pinche",
+        "precio": 3992,
+        "categoria": "Pilates y Yoga",
+        "imagen": "14.jpg"
+    }
+]
